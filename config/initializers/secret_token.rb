@@ -1,0 +1,1 @@
+MoreOnSimpleForm::Application.config.secret_key_base = '88774b5b7d13db0ac109e65cb580acc12395e1316ee0249e07a452427bf67541357c91be2994b186795e27ed61be2b17afa7accfcf285153d3335fbd07befebe' 
