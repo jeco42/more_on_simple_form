@@ -1,0 +1,23 @@
+<%= simple_form_for(@company) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :field %>
+  </div>
+
+  <div class="div-with-border" >
+	  <fieldset id="company_board_members">
+	      <%= f.fields_for :board_members do |builder| %>
+	        <%= render 'board_member_fields', :f => builder %>
+	      <% end %>
+	      <p class="links", id="add_board_members_for_company">
+	        <%= link_to_add_association 'click to add board members', f, :board_members %>
+	      </p>
+	    </fieldset>
+   </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

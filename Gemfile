@@ -12,6 +12,7 @@ gem 'bootstrap-sass'
 gem 'figaro'
 gem 'high_voltage'
 gem 'simple_form', github: 'wtfiwtz/simple_form_bootstrap3' 
+gem 'cocoon'
 
 group :development do
 	gem 'better_errors'
